@@ -58,24 +58,39 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** no margin no padding ***********/
+*{
+    margin: 0;
+    padding: 0;
+ }
+
 /****** Header ***********/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
+    height: 4rem;
 }
 
-ul {
+nav {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav a:hover {
+    color: #0065FC;
+    border-top: 2px solid;
+    padding-top: 1rem;
+}
+
+nav ul {
     list-style-type: none;
-    padding: unset;
+    display: flex;
 }
 
-li {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
+header li {
+    padding-left: 3rem;
 }
 
 .logo {
