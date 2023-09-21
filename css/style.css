@@ -69,9 +69,8 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-    margin-bottom: 2rem;
+    align-items: stretch;
+    margin: 2rem 0rem 2rem 0rem;
 }
 
 nav {
@@ -87,7 +86,7 @@ header nav a:hover {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
 }
 
@@ -143,8 +142,7 @@ button {
     font-weight: 700;
     color: white;
     text-align: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
 }
 
 button:hover {
@@ -170,10 +168,7 @@ button:hover {
     border-radius: 2rem 2rem 2rem 2rem;
     height: 2rem;
     margin-left: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .filtersbuttons span {
@@ -185,6 +180,24 @@ button:hover {
     background-color: var(--filter-bg-color);    
 }
 
+.formsection-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.fa-info {
+    height: 1.4rem;
+    width: 1.4rem;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formsection-bottom p {
+    margin-left: 1rem;
+}
 
 
 /****** Hebergements And Populaires ***********/
