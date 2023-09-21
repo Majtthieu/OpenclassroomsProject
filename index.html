@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="main-container">
+        <div class="main-container">
         <header>
             <img class="logo" src="./images/logo/Booki.png" alt="Logo du site Booki">
             <nav>
@@ -29,6 +29,54 @@
             </nav>
         </header>
         <main>
+            <!--first section with search form and filters-->
+            <section class="formsection">
+                <h1>
+                    Trouvez votre hébergement pour des vacances de rêve
+                </h1>
+                <p>
+                    En plein centre-ville ou en pleine                        
+                </p>
+                <div class="entryfield">
+                    <i class="fa-lg fa-solid fa-location-dot" style="color: #000000;" aria-hidden="true"></i>
+                    <form id="loc" method="get" action="">
+                        <input type="text" name="place" placeholder="Marseille, France" style="text-align:center;">
+                    </form>
+                    <button form="loc" type="submit">
+                        Rechercher
+                    </button>
+                </div>
+                <div class="filters">
+                    <div>
+                        <span>Filtres</span>
+                    </div>
+                    <a href="#">
+                    <div class="filtersbuttons">
+                        <i class="fa-lg fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                        <span>Économique</span>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="filtersbuttons">
+                        <i class="fa-lg fa-solid fa-person" aria-hidden="true"></i>
+                        <span>Familial</span>
+                    </div>
+                </a>
+                    <a href="#">
+                    <div class="filtersbuttons">
+                        <i class="fa-lg fa-solid fa-heart" aria-hidden="true"></i>
+                        <span>Romantique</span>
+                    </div>
+                </a>
+                    <a href="#">
+                    <div class="filtersbuttons">
+                        <i class="fa-lg fa-solid fa-fire" aria-hidden="true"></i>
+                        <span>Nos pépites</span>
+                    </div>
+                </a>
+                </div>
+            </section>
+            <!--second section with hebergements and populaires-->
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                 </section>
