@@ -123,7 +123,8 @@ header li {
 }
 
 form {
-    border: 1px solid var(--main-bg-color);
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
     display: flex;
     align-items: center;
 }
@@ -165,7 +166,7 @@ button:hover {
     display: flex;
     align-items: center;
     border: 2px solid var(--main-bg-color);
-    border-radius: 2rem 2rem 2rem 2rem;
+    border-radius: 2rem;
     height: 2rem;
     margin-left: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -189,7 +190,7 @@ button:hover {
     height: 1.4rem;
     width: 1.4rem;
     border: 1px solid var(--main-bg-color);
-    border-radius: 0.7rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,23 +205,25 @@ button:hover {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin: 2rem 0rem 2rem 0rem;
 }
 
-.hebergements-and-populaires section {
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
-}
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .populaires-title {
