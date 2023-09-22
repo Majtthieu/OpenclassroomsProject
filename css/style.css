@@ -7,7 +7,11 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-    font-size: 16px;
+}
+
+html {
+	font-size: 16px;
+    /* penser à remplacer par 62,5% et à adapter le reste en rem le cas échéant */
 }
 
 .fa-solid {
@@ -316,7 +320,27 @@ header {
     margin-bottom: 5px;
 }
 
+/* Activités */
+.activites {
+    width: 100%;
+    padding: 30px 30px 0px 30px;
+    box-sizing: border-box;
+}
 
+.activites-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites-cards a {
+    width: 22%;
+}
+
+.activites-cards img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
