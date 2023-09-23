@@ -340,8 +340,19 @@ header {
     height: 350px;
     width: 100%;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
+.activites-cards .card {
+    display: flex;
+    margin-top: 33px;
+    flex-direction: column;
+    padding: 0;
+}
+
+.activites-cards h3 {
+    margin: 1rem 1rem 1rem 1rem;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
