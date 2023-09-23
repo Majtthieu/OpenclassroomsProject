@@ -345,13 +345,38 @@ header {
 
 .activites-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin: 33px 0px;
     flex-direction: column;
     padding: 0;
 }
 
 .activites-cards h3 {
     margin: 1rem 1rem 1rem 1rem;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--main-bg-color);
+    margin-top: 2rem;
+    display: flex;
+}
+
+.footer-column {
+    width: 33%;
+    padding: 1.2rem;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list li {
+    margin-top: 1rem;
+}
+
+h4 {
+    font-size: 1.1rem;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
