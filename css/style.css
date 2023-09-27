@@ -21,6 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -43,7 +44,7 @@ a {
     background-color: white;
     border-radius: 1.25rem;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0rem 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1));
 }
 
 .card img {
@@ -73,7 +74,7 @@ ul {
  }
 
 /****** Header ***********/
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -156,7 +157,7 @@ header {
 }
 
 .button:hover {
-    box-shadow: 0rem 0rem 0.625rem var(--main-color);
+    filter: drop-shadow(0rem 0.5rem 0.25rem rgba(0, 0, 0, 0.1));
 }
 
 /****** Filters ***********/
@@ -167,8 +168,13 @@ header {
     margin-bottom: 2rem;
 }
 
-.filters span {
+.filters p {
     font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.filters-line{
+    display: flex;
 }
 
 .filters-buttons {
@@ -177,12 +183,12 @@ header {
     border: 0.125rem solid var(--main-bg-color);
     border-radius: 2rem;
     height: 2rem;
-    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .filters-buttons span {
-    margin-left: 0.5rem;
+    margin-left: 0.875rem;
     font-size: 1rem;
 }
 
@@ -387,6 +393,15 @@ h4 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters p {
+        margin-bottom: 1rem;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -411,15 +426,71 @@ h4 {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 0.8125rem;
+    }
+
+    .activites-cards img {
+        height: 200px;
     }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container {
+        padding: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .header-nav {
+        justify-content: space-between;
+      }
+
+    .header-nav li {
+        width: 50%;
+        padding: 0;
+        border-bottom: 0.125rem var(--main-bg-color) solid;
+        padding-bottom: 1rem;
+    }
+
+    .header-nav li:hover {
+        border-bottom: 0.125rem var(--main-color) solid;
+    }
+    
+    .header-nav a:hover {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .form-section {
+        padding: 0 1rem;
+    }
+
+    .filters-line {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .filters-line a {
+        width: 46%;
+    }
+
+    .filters-buttons {
+        justify-content: flex-start;
+        margin-right: 0;
+    }
+
+    .filters-buttons span {
+        font-size: 0.875rem;
+    }
+    
 }
