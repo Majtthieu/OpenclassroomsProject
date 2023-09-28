@@ -369,7 +369,13 @@ ul {
 }
 
 .activites-cards h3 {
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0rem 1rem;
+}
+
+.activites-cards .card-content {
+    display: flex;
+    align-items: center;
+    height: 3rem;
 }
 
 /* footer */
