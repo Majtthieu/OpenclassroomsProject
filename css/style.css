@@ -13,6 +13,11 @@
     color: var(--main-color);
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -70,7 +75,6 @@ ul {
 
 /****** Display flex ***********/
 
-.body,
 .header,
 .header-nav,
 .header-nav ul,
@@ -110,7 +114,6 @@ ul {
     align-items: center;
 }
 
-.body,
 .button,
 .fa-info {
     justify-content: center;
