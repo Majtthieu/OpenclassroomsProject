@@ -47,6 +47,10 @@ a {
     filter: drop-shadow(0rem 0.1875rem 0.9375rem rgba(0, 0, 0, 0.1));
 }
 
+.card:hover {
+    filter: drop-shadow(0rem 0.1875rem 0.9375rem rgba(0, 0, 0, 0.3));
+}
+
 .card img {
     object-fit: cover;
 }
