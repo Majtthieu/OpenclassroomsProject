@@ -20,6 +20,7 @@ body {
 
 .main-container {
     width: 100%;
+            /************************************************************************************/
     max-width: 1440px;
     min-width: 320px;
     padding: 0 50px;
@@ -41,6 +42,7 @@ a {
 }
 
 .card {
+            /************************************************************************************/
     background-color: white;
     border-radius: 1.25rem;
     padding: 5px;
@@ -52,6 +54,7 @@ a {
 }
 
 .card img {
+    /**********************************************************************************/
     object-fit: cover;
 }
 
@@ -79,29 +82,7 @@ ul {
 
 /****** Display flex ***********/
 
-.header,
-.header-nav,
-.header-nav ul,
-.entry-field,
-.fa-location-dot,
-#loc,
-.button,
-.filters,
-.filters-buttons,
-.filters-line,
-.form-section-bottom,
-.fa-info,
-.hebergements-and-populaires,
-.hebergements-cards,
-.hebergements-cards .card,
-.hebergements-cards .card-content,
-.populaires-title,
-.populaires-cards .card,
-.populaires-cards .card-content,
-.activites-cards,
-.activites-cards .card,
-.activites-cards .card-content,
-.footer {
+.df {
     display: flex;
 }
 
@@ -140,6 +121,7 @@ ul {
 }
 
 .header-nav {
+            /************************************************************************************/
     justify-content: flex-end;
 }
 
@@ -175,10 +157,19 @@ ul {
     margin-top: 2rem;  
 }
 
+.entry-field input {
+    text-align: center;
+}
+
 .fa-location-dot {
     background-color: var(--main-bg-color);
     border: 1rem solid var(--main-bg-color);
     border-radius: 1rem 0rem 0rem 1rem;
+    color: black;
+}
+
+.fa-magnifying-glass {
+    color: white;
 }
 
 #loc {
@@ -206,6 +197,7 @@ ul {
 }
 
 .button i {
+/*********************************************************************************/
     display: none;
 }
 
@@ -268,6 +260,7 @@ ul {
 }
 
 .hebergements-cards {
+            /************************************************************************************/
     flex-flow: row wrap;
 }
 
@@ -277,6 +270,7 @@ ul {
 }
 
 .hebergements-cards .card {
+            /************************************************************************************/
     flex-direction: column;
 }
 
@@ -288,6 +282,7 @@ ul {
 
 .hebergements-cards .card-content {
     padding-left: 10px;
+            /************************************************************************************/
     flex-direction: column;
     box-sizing: border-box;
 }
@@ -418,6 +413,7 @@ h4 {
 
     .hebergements-and-populaires,
     .filters {
+        /************************************************************************************/
             flex-direction: column;
     }
 
@@ -431,6 +427,7 @@ h4 {
     }
 
     .populaires-cards {
+            /************************************************************************************/    
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -445,27 +442,19 @@ h4 {
         margin-top: 0;
     }
 
-    .populaires-cards .card-title {
-        font-size: 0.875rem;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 0.8125rem;
-    }
-
-    .hebergements-cards .card-title {
-        font-size: 0.875rem;
-    }
-
-    .hebergements-cards .card-subtitle {
-        font-size: 0.8125rem;
-    }
-
+    .populaires-cards .card-title,
+    .hebergements-cards .card-title,
     .activites-cards .card-title {
         font-size: 0.875rem;
     }
 
+    .populaires-cards .card-subtitle,
+    .hebergements-cards .card-subtitle {
+        font-size: 0.8125rem;
+    }
+
     .activites-cards img {
+                /************************************************************************************/
         height: 200px;
     }
 }
@@ -482,6 +471,7 @@ h4 {
     }
 
     .header, .populaires-cards, .hebergements-cards, .activites-cards, .footer {
+        /************************************************************************************/
         flex-direction: column;
     }
 
@@ -527,6 +517,7 @@ h4 {
     }
 
     .button span {
+        /************************************************************************************/
         display: none;     
     }
 
@@ -535,6 +526,7 @@ h4 {
     }
     
     .filters-line {
+        /************************************************************************************/
         flex-wrap: wrap;
         justify-content: space-between;
         row-gap: 1rem;
@@ -554,6 +546,7 @@ h4 {
     }
 
     .hebergements-and-populaires {
+        /************************************************************************************/
         flex-direction: column-reverse;
     }
 
