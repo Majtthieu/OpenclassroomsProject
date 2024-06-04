@@ -1,4 +1,4 @@
-# Booki - 1er projet dans le cadre du diplôme de développeur web Openclassrooms
+# Booki - Premier projet Openclassrooms
 ***
 
 ## Intégration d'une maquette Figma en HTML et CSS uniquement
